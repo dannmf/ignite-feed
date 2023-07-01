@@ -1,1 +1,35 @@
-.post {}
+.post {
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+
+}
+
+.post+.post {
+    margin-top: 2rem
+}
+
+.post>header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post>header time .content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+}
+
+.content a:hover {
+    color: var(--green-300);
+}
